@@ -27,9 +27,6 @@
                    enabled="${access.logging.enabled}"/>
             <Host name='localhost'>
                 <Listener className="com.gopivotal.cloudfoundry.tomcat.lifecycle.ApplicationStartupFailureDetectingLifecycleListener"/>
-                <Context path="" docBase="prweb.war" reloadable="true" />
-                <Context path="" docBase="prsysmgmt.war" reloadable="true" />
-                <Context path="" docBase="prhelp.war" reloadable="true" />
             </Host>
         </Engine>
     </Service>
